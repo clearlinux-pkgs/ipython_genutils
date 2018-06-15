@@ -4,7 +4,7 @@
 #
 Name     : ipython_genutils
 Version  : 0.2.0
-Release  : 14
+Release  : 15
 URL      : http://pypi.debian.net/ipython_genutils/ipython_genutils-0.2.0.tar.gz
 Source0  : http://pypi.debian.net/ipython_genutils/ipython_genutils-0.2.0.tar.gz
 Summary  : Vestigial utilities from IPython
