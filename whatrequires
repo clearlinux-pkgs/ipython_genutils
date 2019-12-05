@@ -1,8 +1,8 @@
 # This file contains recursive sources that require this package
 bash_kernel
+ipdb
 ipykernel
 ipython
 ipython-sql
-jupyter
-jupyter-notebook-gist
 notebook
+qtconsole
