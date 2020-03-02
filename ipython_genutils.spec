@@ -4,7 +4,7 @@
 #
 Name     : ipython_genutils
 Version  : 0.2.0
-Release  : 27
+Release  : 28
 URL      : http://pypi.debian.net/ipython_genutils/ipython_genutils-0.2.0.tar.gz
 Source0  : http://pypi.debian.net/ipython_genutils/ipython_genutils-0.2.0.tar.gz
 Summary  : Vestigial utilities from IPython
@@ -16,11 +16,7 @@ Requires: ipython_genutils-python3 = %{version}-%{release}
 BuildRequires : buildreq-distutils3
 
 %description
-# IPython vestigial utilities
-This package shouldn't exist.
-It contains some common utilities shared by Jupyter and IPython projects during The Big Split™.
-As soon as possible, those packages will remove their dependency on this,
-and this repo will go away.
+Pretend this doesn't exist. Nobody should use it.
 
 %package license
 Summary: license components for the ipython_genutils package.
@@ -43,6 +39,7 @@ python components for the ipython_genutils package.
 Summary: python3 components for the ipython_genutils package.
 Group: Default
 Requires: python3-core
+Provides: pypi(ipython_genutils)
 
 %description python3
 python3 components for the ipython_genutils package.
@@ -57,7 +54,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1575552868
+export SOURCE_DATE_EPOCH=1583159405
 # -Werror is for werrorists
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
