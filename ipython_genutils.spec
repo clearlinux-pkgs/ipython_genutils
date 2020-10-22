@@ -4,7 +4,7 @@
 #
 Name     : ipython_genutils
 Version  : 0.2.0
-Release  : 29
+Release  : 30
 URL      : http://pypi.debian.net/ipython_genutils/ipython_genutils-0.2.0.tar.gz
 Source0  : http://pypi.debian.net/ipython_genutils/ipython_genutils-0.2.0.tar.gz
 Summary  : Vestigial utilities from IPython
@@ -16,7 +16,11 @@ Requires: ipython_genutils-python3 = %{version}-%{release}
 BuildRequires : buildreq-distutils3
 
 %description
-Pretend this doesn't exist. Nobody should use it.
+# IPython vestigial utilities
+This package shouldn't exist.
+It contains some common utilities shared by Jupyter and IPython projects during The Big Split™.
+As soon as possible, those packages will remove their dependency on this,
+and this repo will go away.
 
 %package license
 Summary: license components for the ipython_genutils package.
@@ -54,12 +58,11 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1583159405
-# -Werror is for werrorists
+export SOURCE_DATE_EPOCH=1603393504
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
-export FCFLAGS="$CFLAGS -fno-lto "
-export FFLAGS="$CFLAGS -fno-lto "
+export FCFLAGS="$FFLAGS -fno-lto "
+export FFLAGS="$FFLAGS -fno-lto "
 export CXXFLAGS="$CXXFLAGS -fno-lto "
 export MAKEFLAGS=%{?_smp_mflags}
 python3 setup.py build
