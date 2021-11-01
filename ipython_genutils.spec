@@ -4,7 +4,7 @@
 #
 Name     : ipython_genutils
 Version  : 0.2.0
-Release  : 41
+Release  : 42
 URL      : http://pypi.debian.net/ipython_genutils/ipython_genutils-0.2.0.tar.gz
 Source0  : http://pypi.debian.net/ipython_genutils/ipython_genutils-0.2.0.tar.gz
 Summary  : Vestigial utilities from IPython
@@ -58,7 +58,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1603393504
+export SOURCE_DATE_EPOCH=1635742569
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$FFLAGS -fno-lto "
